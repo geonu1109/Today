@@ -9,8 +9,8 @@ import Foundation
 import Combine
 
 protocol TaskRepository {
-    func findAll() -> AnyPublisher<[Task], Never>
+    func findAll() -> Future<[Task], Error>
     
     @discardableResult
-    func save(_: Task) -> Result<Void, Error>
+    func save(_: Task) -> Future<Void, Error>
 }

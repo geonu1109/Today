@@ -14,9 +14,21 @@ final class TodayViewModel: ObservableObject {
     
     let repository = Container.shared.taskRepository
     
+    private var asyncTask: AnyCancellable? = nil
+    
     init() {
-        self.repository.findAll()
-            .assign(to: &self.$taskList)
+        self.fetch()
+    }
+    
+    func fetch() {
+        self.asyncTask?.cancel()
+        
+        self.asyncTask = self.repository.findAll()
+            .sink { _ in
+                self.asyncTask = nil
+            } receiveValue: { (tasks) in
+                self.taskList = tasks
+            }
     }
 }
 
@@ -32,7 +44,13 @@ struct TodayScene: View {
             .navigationTitle("오늘")
             .navigationBarItems(
                 trailing: NavigationLink(
-                    destination: CreationScene(),
+                    destination: CreationScene { (newTask) in
+                        guard let newTask = newTask else {
+                            return
+                        }
+                        self.viewModel.taskList.append(newTask)
+                        self.viewModel.taskList = self.viewModel.taskList
+                    },
                     label: {
                         Image(systemName: "plus")
                     }

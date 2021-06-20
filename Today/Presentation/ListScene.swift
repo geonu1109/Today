@@ -17,7 +17,7 @@ struct ListScene: View {
             .navigationTitle("목록")
             .navigationBarItems(
                 trailing: NavigationLink(
-                    destination: CreationScene(),
+                    destination: CreationScene { (newTask) in },
                     label: {
                         Image(systemName: "plus")
                     }
