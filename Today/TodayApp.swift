@@ -13,7 +13,7 @@ struct TodayApp: App {
 
     var body: some Scene {
         WindowGroup {
-            MainScene()
+            MemoListScene()
 //            ContentView()
 //                .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }

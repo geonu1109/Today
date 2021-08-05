@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		795C449426BC3F0D00E07A4E /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795C449326BC3F0D00E07A4E /* Memo.swift */; };
+		795C449626BC3F8100E07A4E /* MemoListScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795C449526BC3F8100E07A4E /* MemoListScene.swift */; };
+		795C449826BC401100E07A4E /* MemoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795C449726BC401100E07A4E /* MemoListViewModel.swift */; };
+		795C449A26BC406D00E07A4E /* MemoRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795C449926BC406D00E07A4E /* MemoRowView.swift */; };
+		795C449C26BC40E100E07A4E /* YearMonthDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795C449B26BC40E100E07A4E /* YearMonthDay.swift */; };
+		795C449E26BC439500E07A4E /* ValueObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795C449D26BC439500E07A4E /* ValueObject.swift */; };
+		795C44A426BC49B500E07A4E /* EmptyMemoRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795C44A326BC49B500E07A4E /* EmptyMemoRowView.swift */; };
 		797EA9DD267F996A00D6909F /* UserDefaultsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797EA9DC267F996A00D6909F /* UserDefaultsDataSource.swift */; };
 		797EA9DF267FA4D500D6909F /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797EA9DE267FA4D500D6909F /* Record.swift */; };
 		797EA9E1267FA52500D6909F /* DefaultTaskRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797EA9E0267FA52500D6909F /* DefaultTaskRepository.swift */; };
@@ -48,6 +55,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		795C449326BC3F0D00E07A4E /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
+		795C449526BC3F8100E07A4E /* MemoListScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListScene.swift; sourceTree = "<group>"; };
+		795C449726BC401100E07A4E /* MemoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListViewModel.swift; sourceTree = "<group>"; };
+		795C449926BC406D00E07A4E /* MemoRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoRowView.swift; sourceTree = "<group>"; };
+		795C449B26BC40E100E07A4E /* YearMonthDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YearMonthDay.swift; sourceTree = "<group>"; };
+		795C449D26BC439500E07A4E /* ValueObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueObject.swift; sourceTree = "<group>"; };
+		795C44A326BC49B500E07A4E /* EmptyMemoRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyMemoRowView.swift; sourceTree = "<group>"; };
 		797EA9DC267F996A00D6909F /* UserDefaultsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsDataSource.swift; sourceTree = "<group>"; };
 		797EA9DE267FA4D500D6909F /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
 		797EA9E0267FA52500D6909F /* DefaultTaskRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTaskRepository.swift; sourceTree = "<group>"; };
@@ -102,6 +116,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		795C448E26BC3E5100E07A4E /* Diary */ = {
+			isa = PBXGroup;
+			children = (
+				795C449226BC3EFA00E07A4E /* Domain */,
+				795C448F26BC3E5B00E07A4E /* Presentation */,
+			);
+			path = Diary;
+			sourceTree = "<group>";
+		};
+		795C448F26BC3E5B00E07A4E /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				795C449526BC3F8100E07A4E /* MemoListScene.swift */,
+				795C449726BC401100E07A4E /* MemoListViewModel.swift */,
+				795C449926BC406D00E07A4E /* MemoRowView.swift */,
+				795C44A326BC49B500E07A4E /* EmptyMemoRowView.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		795C449226BC3EFA00E07A4E /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				795C449326BC3F0D00E07A4E /* Memo.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
 		799BECF82670A9C30074C8A0 = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +167,7 @@
 		799BED032670A9C30074C8A0 /* Today */ = {
 			isa = PBXGroup;
 			children = (
+				795C448E26BC3E5100E07A4E /* Diary */,
 				799BED462670C3A70074C8A0 /* Data */,
 				799BED412670B6690074C8A0 /* Utility */,
 				799BED3E2670B4F90074C8A0 /* Domain */,
@@ -191,9 +234,11 @@
 		799BED412670B6690074C8A0 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				795C449B26BC40E100E07A4E /* YearMonthDay.swift */,
 				797EA9DE267FA4D500D6909F /* Record.swift */,
 				799BED422670B6770074C8A0 /* ThreadSafe.swift */,
 				799BED492670C4C30074C8A0 /* Entity.swift */,
+				795C449D26BC439500E07A4E /* ValueObject.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -341,16 +386,23 @@
 				799BED3D2670AF1D0074C8A0 /* CreationScene.swift in Sources */,
 				799BED072670A9C30074C8A0 /* ContentView.swift in Sources */,
 				799BED392670ABDE0074C8A0 /* TodayScene.swift in Sources */,
+				795C449826BC401100E07A4E /* MemoListViewModel.swift in Sources */,
+				795C449E26BC439500E07A4E /* ValueObject.swift in Sources */,
 				799BED452670BAA50074C8A0 /* TaskRepository.swift in Sources */,
+				795C449626BC3F8100E07A4E /* MemoListScene.swift in Sources */,
 				797EA9E1267FA52500D6909F /* DefaultTaskRepository.swift in Sources */,
 				797EA9DD267F996A00D6909F /* UserDefaultsDataSource.swift in Sources */,
 				799BED052670A9C30074C8A0 /* TodayApp.swift in Sources */,
 				799BED3B2670ACB80074C8A0 /* ListScene.swift in Sources */,
 				799BED362670AB460074C8A0 /* MainScene.swift in Sources */,
+				795C449426BC3F0D00E07A4E /* Memo.swift in Sources */,
+				795C449A26BC406D00E07A4E /* MemoRowView.swift in Sources */,
 				799BED402670B5030074C8A0 /* Task.swift in Sources */,
+				795C44A426BC49B500E07A4E /* EmptyMemoRowView.swift in Sources */,
 				799BED432670B6770074C8A0 /* ThreadSafe.swift in Sources */,
 				799BED4A2670C4C30074C8A0 /* Entity.swift in Sources */,
 				799BED4C2670CAD50074C8A0 /* Container.swift in Sources */,
+				795C449C26BC40E100E07A4E /* YearMonthDay.swift in Sources */,
 				797EA9DF267FA4D500D6909F /* Record.swift in Sources */,
 				799BED112670A9C40074C8A0 /* Today.xcdatamodeld in Sources */,
 			);
