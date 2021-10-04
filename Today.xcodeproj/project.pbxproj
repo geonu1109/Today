@@ -36,6 +36,8 @@
 		799BED4C2670CAD50074C8A0 /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799BED4B2670CAD50074C8A0 /* Container.swift */; };
 		799BED502670CD110074C8A0 /* TodoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799BED4F2670CD110074C8A0 /* TodoRow.swift */; };
 		79AE2280270B3D9E00CB8D81 /* Month.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AE227F270B3D9D00CB8D81 /* Month.swift */; };
+		79AE2283270B3F2500CB8D81 /* UUID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AE2282270B3F2500CB8D81 /* UUID.swift */; };
+		79AE2287270B3F6B00CB8D81 /* MemoMakerScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AE2286270B3F6B00CB8D81 /* MemoMakerScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +93,8 @@
 		799BED4B2670CAD50074C8A0 /* Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
 		799BED4F2670CD110074C8A0 /* TodoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoRow.swift; sourceTree = "<group>"; };
 		79AE227F270B3D9D00CB8D81 /* Month.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Month.swift; sourceTree = "<group>"; };
+		79AE2282270B3F2500CB8D81 /* UUID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UUID.swift; sourceTree = "<group>"; };
+		79AE2286270B3F6B00CB8D81 /* MemoMakerScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoMakerScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +125,7 @@
 		795C448E26BC3E5100E07A4E /* Diary */ = {
 			isa = PBXGroup;
 			children = (
+				79AE2281270B3F1900CB8D81 /* Extension */,
 				795C449226BC3EFA00E07A4E /* Domain */,
 				795C448F26BC3E5B00E07A4E /* Presentation */,
 			);
@@ -130,10 +135,8 @@
 		795C448F26BC3E5B00E07A4E /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				795C449526BC3F8100E07A4E /* MemoListScene.swift */,
-				795C449726BC401100E07A4E /* MemoListViewModel.swift */,
-				795C449926BC406D00E07A4E /* MemoRowView.swift */,
-				795C44A326BC49B500E07A4E /* EmptyMemoRowView.swift */,
+				79AE2285270B3F4700CB8D81 /* MemoMaker */,
+				79AE2284270B3F3900CB8D81 /* MemoList */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -253,6 +256,33 @@
 				797EA9E0267FA52500D6909F /* DefaultTaskRepository.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		79AE2281270B3F1900CB8D81 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				79AE2282270B3F2500CB8D81 /* UUID.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		79AE2284270B3F3900CB8D81 /* MemoList */ = {
+			isa = PBXGroup;
+			children = (
+				795C449526BC3F8100E07A4E /* MemoListScene.swift */,
+				795C449726BC401100E07A4E /* MemoListViewModel.swift */,
+				795C449926BC406D00E07A4E /* MemoRowView.swift */,
+				795C44A326BC49B500E07A4E /* EmptyMemoRowView.swift */,
+			);
+			path = MemoList;
+			sourceTree = "<group>";
+		};
+		79AE2285270B3F4700CB8D81 /* MemoMaker */ = {
+			isa = PBXGroup;
+			children = (
+				79AE2286270B3F6B00CB8D81 /* MemoMakerScene.swift */,
+			);
+			path = MemoMaker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -402,6 +432,7 @@
 				795C449426BC3F0D00E07A4E /* Memo.swift in Sources */,
 				795C449A26BC406D00E07A4E /* MemoRowView.swift in Sources */,
 				799BED402670B5030074C8A0 /* Todo.swift in Sources */,
+				79AE2283270B3F2500CB8D81 /* UUID.swift in Sources */,
 				795C44A426BC49B500E07A4E /* EmptyMemoRowView.swift in Sources */,
 				799BED432670B6770074C8A0 /* ThreadSafe.swift in Sources */,
 				799BED4A2670C4C30074C8A0 /* Entity.swift in Sources */,
@@ -409,6 +440,7 @@
 				795C449C26BC40E100E07A4E /* YearMonthDay.swift in Sources */,
 				797EA9DF267FA4D500D6909F /* Record.swift in Sources */,
 				799BED112670A9C40074C8A0 /* Today.xcdatamodeld in Sources */,
+				79AE2287270B3F6B00CB8D81 /* MemoMakerScene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -570,7 +602,7 @@
 				DEVELOPMENT_TEAM = 7RLAPP4W9Y;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Today/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -592,7 +624,7 @@
 				DEVELOPMENT_TEAM = 7RLAPP4W9Y;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Today/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

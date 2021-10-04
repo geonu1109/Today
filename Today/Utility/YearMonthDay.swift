@@ -7,13 +7,17 @@
 
 import Foundation
 
-struct YearMonthDay: ValueObject {
+struct YearMonthDay: Codable, ValueObject {
     var year: Int
     var month: Month
     var day: Int
     
     static var today: YearMonthDay {
         return .init(from: .init())
+    }
+    
+    var isToday: Bool {
+        return self == .today
     }
     
     init(year: Int, month: Month, day: Int) {
@@ -33,6 +37,14 @@ struct YearMonthDay: ValueObject {
 extension YearMonthDay: Equatable {
     static func == (lhs: YearMonthDay, rhs: YearMonthDay) -> Bool {
         return lhs.year == rhs.year && lhs.month == rhs.month && lhs.day == rhs.day
+    }
+}
+
+extension YearMonthDay: Hashable {
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(self.year)
+        hasher.combine(self.month)
+        hasher.combine(self.day)
     }
 }
 

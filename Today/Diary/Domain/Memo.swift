@@ -7,30 +7,25 @@
 
 import Foundation
 
-extension UUID {
-    static var `nil`: UUID {
-        UUID(uuidString: "00000000-0000-0000-0000-000000000000")!
-    }
-}
-
-struct Memo: Entity {
-    let id: UUID
+class Memo: Codable, ValueObject {
     let date: YearMonthDay
-    let content: String
+    var content: String
+    
+    var id: Int {
+        return self.hashValue
+    }
     
     static var empty: Memo {
-        return .init(id: .nil, date: .today, content: "")
+        return .init(date: .today, content: "")
     }
     
     init(date: YearMonthDay = .today, content: String) {
-        self.id = .init()
         self.date = date
         self.content = content
     }
     
-    private init(id: UUID, date: YearMonthDay, content: String) {
-        self.id = id
-        self.date = date
-        self.content = content
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(self.date)
+        hasher.combine(self.content)
     }
 }

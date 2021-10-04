@@ -13,4 +13,8 @@ extension ValueObject {
     var id: Int {
         self.hashValue
     }
+    
+    static func == (lhs: Self, rhs: Self) -> Bool {
+        return lhs.hashValue == rhs.hashValue
+    }
 }
