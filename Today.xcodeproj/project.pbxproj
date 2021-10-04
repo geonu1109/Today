@@ -29,12 +29,12 @@
 		799BED392670ABDE0074C8A0 /* TodayScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799BED382670ABDE0074C8A0 /* TodayScene.swift */; };
 		799BED3B2670ACB80074C8A0 /* ListScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799BED3A2670ACB80074C8A0 /* ListScene.swift */; };
 		799BED3D2670AF1D0074C8A0 /* CreationScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799BED3C2670AF1D0074C8A0 /* CreationScene.swift */; };
-		799BED402670B5030074C8A0 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799BED3F2670B5030074C8A0 /* Task.swift */; };
+		799BED402670B5030074C8A0 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799BED3F2670B5030074C8A0 /* Todo.swift */; };
 		799BED432670B6770074C8A0 /* ThreadSafe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799BED422670B6770074C8A0 /* ThreadSafe.swift */; };
-		799BED452670BAA50074C8A0 /* TaskRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799BED442670BAA50074C8A0 /* TaskRepository.swift */; };
+		799BED452670BAA50074C8A0 /* TodoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799BED442670BAA50074C8A0 /* TodoRepository.swift */; };
 		799BED4A2670C4C30074C8A0 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799BED492670C4C30074C8A0 /* Entity.swift */; };
 		799BED4C2670CAD50074C8A0 /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799BED4B2670CAD50074C8A0 /* Container.swift */; };
-		799BED502670CD110074C8A0 /* TaskRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799BED4F2670CD110074C8A0 /* TaskRow.swift */; };
+		799BED502670CD110074C8A0 /* TodoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799BED4F2670CD110074C8A0 /* TodoRow.swift */; };
 		79AE2280270B3D9E00CB8D81 /* Month.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AE227F270B3D9D00CB8D81 /* Month.swift */; };
 /* End PBXBuildFile section */
 
@@ -84,12 +84,12 @@
 		799BED382670ABDE0074C8A0 /* TodayScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayScene.swift; sourceTree = "<group>"; };
 		799BED3A2670ACB80074C8A0 /* ListScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListScene.swift; sourceTree = "<group>"; };
 		799BED3C2670AF1D0074C8A0 /* CreationScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreationScene.swift; sourceTree = "<group>"; };
-		799BED3F2670B5030074C8A0 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		799BED3F2670B5030074C8A0 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
 		799BED422670B6770074C8A0 /* ThreadSafe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadSafe.swift; sourceTree = "<group>"; };
-		799BED442670BAA50074C8A0 /* TaskRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRepository.swift; sourceTree = "<group>"; };
+		799BED442670BAA50074C8A0 /* TodoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoRepository.swift; sourceTree = "<group>"; };
 		799BED492670C4C30074C8A0 /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
 		799BED4B2670CAD50074C8A0 /* Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
-		799BED4F2670CD110074C8A0 /* TaskRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRow.swift; sourceTree = "<group>"; };
+		799BED4F2670CD110074C8A0 /* TodoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoRow.swift; sourceTree = "<group>"; };
 		79AE227F270B3D9D00CB8D81 /* Month.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Month.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -219,7 +219,7 @@
 				799BED382670ABDE0074C8A0 /* TodayScene.swift */,
 				799BED3A2670ACB80074C8A0 /* ListScene.swift */,
 				799BED3C2670AF1D0074C8A0 /* CreationScene.swift */,
-				799BED4F2670CD110074C8A0 /* TaskRow.swift */,
+				799BED4F2670CD110074C8A0 /* TodoRow.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -227,8 +227,8 @@
 		799BED3E2670B4F90074C8A0 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				799BED3F2670B5030074C8A0 /* Task.swift */,
-				799BED442670BAA50074C8A0 /* TaskRepository.swift */,
+				799BED3F2670B5030074C8A0 /* Todo.swift */,
+				799BED442670BAA50074C8A0 /* TodoRepository.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -384,14 +384,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				799BED502670CD110074C8A0 /* TaskRow.swift in Sources */,
+				799BED502670CD110074C8A0 /* TodoRow.swift in Sources */,
 				799BED0E2670A9C40074C8A0 /* Persistence.swift in Sources */,
 				799BED3D2670AF1D0074C8A0 /* CreationScene.swift in Sources */,
 				799BED072670A9C30074C8A0 /* ContentView.swift in Sources */,
 				799BED392670ABDE0074C8A0 /* TodayScene.swift in Sources */,
 				795C449826BC401100E07A4E /* MemoListViewModel.swift in Sources */,
 				795C449E26BC439500E07A4E /* ValueObject.swift in Sources */,
-				799BED452670BAA50074C8A0 /* TaskRepository.swift in Sources */,
+				799BED452670BAA50074C8A0 /* TodoRepository.swift in Sources */,
 				79AE2280270B3D9E00CB8D81 /* Month.swift in Sources */,
 				795C449626BC3F8100E07A4E /* MemoListScene.swift in Sources */,
 				797EA9E1267FA52500D6909F /* DefaultTaskRepository.swift in Sources */,
@@ -401,7 +401,7 @@
 				799BED362670AB460074C8A0 /* MainScene.swift in Sources */,
 				795C449426BC3F0D00E07A4E /* Memo.swift in Sources */,
 				795C449A26BC406D00E07A4E /* MemoRowView.swift in Sources */,
-				799BED402670B5030074C8A0 /* Task.swift in Sources */,
+				799BED402670B5030074C8A0 /* Todo.swift in Sources */,
 				795C44A426BC49B500E07A4E /* EmptyMemoRowView.swift in Sources */,
 				799BED432670B6770074C8A0 /* ThreadSafe.swift in Sources */,
 				799BED4A2670C4C30074C8A0 /* Entity.swift in Sources */,

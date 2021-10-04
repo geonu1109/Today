@@ -15,9 +15,9 @@ struct CreationScene: View {
     @State
     var content: String = ""
     
-    let completion: (Task?) -> Void
+    let completion: (Todo?) -> Void
     
-    let repository = Container.shared.taskRepository
+    let repository = Container.shared.todoRepository
     
     @State
     var asyncTask: AnyCancellable? = nil
@@ -48,13 +48,13 @@ struct CreationScene: View {
     func done() {
         self.asyncTask?.cancel()
         
-        let task: Task = .make(from: self.content)
-        self.asyncTask = self.repository.save(task)
+        let todo: Todo = .make(from: self.content)
+        self.asyncTask = self.repository.save(todo)
             .sink { (completion) in
                 self.asyncTask = nil
                 switch completion {
                 case .finished:
-                    self.completion(task)
+                    self.completion(todo)
                     self.presentationMode.wrappedValue.dismiss()
                 case .failure(let error):
                     // not implemented

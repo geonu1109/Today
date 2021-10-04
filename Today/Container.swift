@@ -10,7 +10,7 @@ import Foundation
 final class Container {
     static let shared: Container = .init()
     
-    var taskRepository: TaskRepository = DefaultTaskRepository()
+    var todoRepository: TodoRepository = DefaultTaskRepository()
     
     private init() {}
 }

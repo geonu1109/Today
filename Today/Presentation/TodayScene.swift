@@ -10,9 +10,9 @@ import Combine
 
 final class TodayViewModel: ObservableObject {
     @Published
-    var taskList: [Task] = []
+    var todoList: [Todo] = []
     
-    let repository = Container.shared.taskRepository
+    let repository = Container.shared.todoRepository
     
     private var asyncTask: AnyCancellable? = nil
     
@@ -26,8 +26,8 @@ final class TodayViewModel: ObservableObject {
         self.asyncTask = self.repository.findAll()
             .sink { _ in
                 self.asyncTask = nil
-            } receiveValue: { (tasks) in
-                self.taskList = tasks
+            } receiveValue: { (todos) in
+                self.todoList = todos
             }
     }
 }
@@ -38,8 +38,8 @@ struct TodayScene: View {
     
     var body: some View {
         NavigationView {
-            List(self.viewModel.taskList) { (task) in
-                TaskRow(task: task)
+            List(self.viewModel.todoList) { (todo) in
+                TodoRow(todo: todo)
             }
             .navigationTitle("오늘")
             .navigationBarItems(
@@ -48,8 +48,8 @@ struct TodayScene: View {
                         guard let newTask = newTask else {
                             return
                         }
-                        self.viewModel.taskList.append(newTask)
-                        self.viewModel.taskList = self.viewModel.taskList
+                        self.viewModel.todoList.append(newTask)
+                        self.viewModel.todoList = self.viewModel.todoList
                     },
                     label: {
                         Image(systemName: "plus")

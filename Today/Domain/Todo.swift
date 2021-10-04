@@ -1,5 +1,5 @@
 //
-//  Task.swift
+//  Todo.swift
 //  Today
 //
 //  Created by Geonu Jeon on 2021/06/09.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Task: Entity, Codable {
+class Todo: Entity, Codable {
     let id: UUID
     var content: String
     var isDone: Bool
@@ -18,9 +18,7 @@ class Task: Entity, Codable {
         self.isDone = isDone
     }
     
-    static func make(from content: String) -> Task {
+    static func make(from content: String) -> Todo {
         return .init(id: .init(), content: content, isDone: false)
     }
 }
-
-

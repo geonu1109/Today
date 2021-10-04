@@ -8,25 +8,25 @@
 import Foundation
 import Combine
 
-final class DefaultTaskRepository: TaskRepository {
-    private let localDataSource: UserDefaultsDataSource<Task> = .init()
+final class DefaultTaskRepository: TodoRepository {
+    private let localDataSource: UserDefaultsDataSource<Todo> = .init()
     
-    func findAll() -> Future<[Task], Error> {
+    func findAll() -> Future<[Todo], Error> {
         return .init { (promise) in
             do {
                 let records = try self.localDataSource.findAll()
-                let tasks = records.map { $0.data }
-                promise(.success(tasks))
+                let todos = records.map { $0.data }
+                promise(.success(todos))
             } catch {
                 promise(.failure(error))
             }
         }
     }
     
-    func save(_ task: Task) -> Future<Void, Error> {
+    func save(_ todo: Todo) -> Future<Void, Error> {
         return .init { (promise) in
             do {
-                try self.localDataSource.save(task)
+                try self.localDataSource.save(todo)
                 promise(.success(()))
             } catch {
                 promise(.failure(error))

@@ -7,33 +7,33 @@
 
 import SwiftUI
 
-struct TaskRow: View {
+struct TodoRow: View {
     @State
     var isDone: Bool {
         didSet {
-            self.task.isDone = self.isDone
-            self.repository.save(self.task)
+            self.todo.isDone = self.isDone
+            self.repository.save(self.todo)
         }
     }
     
-    private let repository = Container.shared.taskRepository
+    private let repository = Container.shared.todoRepository
     
-    let task: Task
+    let todo: Todo
     
     var body: some View {
         Button(action: {
             self.isDone.toggle()
         }, label: {
             Label(title: {
-                Text(self.task.content)
+                Text(self.todo.content)
             }, icon: {
                 Image(systemName: self.isDone ? "checkmark.square" : "square")
             })
         })
     }
     
-    init(task: Task) {
-        self.task = task
-        self._isDone = .init(wrappedValue: task.isDone)
+    init(todo: Todo) {
+        self.todo = todo
+        self._isDone = .init(wrappedValue: todo.isDone)
     }
 }
