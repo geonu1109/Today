@@ -29,7 +29,7 @@ final class MemoListViewModel: ObservableObject {
             }
             let memoList = try JSONDecoder().decode([Memo].self, from: data)
                 .reduce([Memo](), { partialResult, memo in
-                    if partialResult.contains { $0.date == memo.date } {
+                    if partialResult.contains(where: { $0.date == memo.date }) {
                         return partialResult
                     } else {
                         return partialResult + [memo]

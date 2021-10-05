@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		790FDE95270C5F0200C51831 /* MemoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790FDE94270C5F0200C51831 /* MemoDetailView.swift */; };
 		795C449426BC3F0D00E07A4E /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795C449326BC3F0D00E07A4E /* Memo.swift */; };
 		795C449626BC3F8100E07A4E /* MemoListScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795C449526BC3F8100E07A4E /* MemoListScene.swift */; };
 		795C449826BC401100E07A4E /* MemoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795C449726BC401100E07A4E /* MemoListViewModel.swift */; };
@@ -58,6 +59,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		790FDE94270C5F0200C51831 /* MemoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoDetailView.swift; sourceTree = "<group>"; };
 		795C449326BC3F0D00E07A4E /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
 		795C449526BC3F8100E07A4E /* MemoListScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListScene.swift; sourceTree = "<group>"; };
 		795C449726BC401100E07A4E /* MemoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListViewModel.swift; sourceTree = "<group>"; };
@@ -122,19 +124,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		795C448E26BC3E5100E07A4E /* Diary */ = {
+		790FDE91270C5ED100C51831 /* MemoDetail */ = {
+			isa = PBXGroup;
+			children = (
+				790FDE94270C5F0200C51831 /* MemoDetailView.swift */,
+			);
+			path = MemoDetail;
+			sourceTree = "<group>";
+		};
+		795C448E26BC3E5100E07A4E /* Memo */ = {
 			isa = PBXGroup;
 			children = (
 				79AE2281270B3F1900CB8D81 /* Extension */,
 				795C449226BC3EFA00E07A4E /* Domain */,
 				795C448F26BC3E5B00E07A4E /* Presentation */,
 			);
-			path = Diary;
+			path = Memo;
 			sourceTree = "<group>";
 		};
 		795C448F26BC3E5B00E07A4E /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				790FDE91270C5ED100C51831 /* MemoDetail */,
 				79AE2285270B3F4700CB8D81 /* MemoMaker */,
 				79AE2284270B3F3900CB8D81 /* MemoList */,
 			);
@@ -172,7 +183,7 @@
 		799BED032670A9C30074C8A0 /* Today */ = {
 			isa = PBXGroup;
 			children = (
-				795C448E26BC3E5100E07A4E /* Diary */,
+				795C448E26BC3E5100E07A4E /* Memo */,
 				799BED462670C3A70074C8A0 /* Data */,
 				799BED412670B6690074C8A0 /* Utility */,
 				799BED3E2670B4F90074C8A0 /* Domain */,
@@ -421,6 +432,7 @@
 				799BED392670ABDE0074C8A0 /* TodayScene.swift in Sources */,
 				795C449826BC401100E07A4E /* MemoListViewModel.swift in Sources */,
 				795C449E26BC439500E07A4E /* ValueObject.swift in Sources */,
+				790FDE95270C5F0200C51831 /* MemoDetailView.swift in Sources */,
 				799BED452670BAA50074C8A0 /* TodoRepository.swift in Sources */,
 				79AE2280270B3D9E00CB8D81 /* Month.swift in Sources */,
 				795C449626BC3F8100E07A4E /* MemoListScene.swift in Sources */,
@@ -644,7 +656,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7RLAPP4W9Y;
 				INFOPLIST_FILE = TodayTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -666,7 +678,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7RLAPP4W9Y;
 				INFOPLIST_FILE = TodayTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -687,6 +699,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7RLAPP4W9Y;
 				INFOPLIST_FILE = TodayUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -707,6 +720,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7RLAPP4W9Y;
 				INFOPLIST_FILE = TodayUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

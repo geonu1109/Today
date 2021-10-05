@@ -32,6 +32,11 @@ struct YearMonthDay: Codable, ValueObject {
         self.month = .init(rawValue: dateComponents.month!)!
         self.day = dateComponents.day!
     }
+    
+    func toDate() -> Date {
+        let dateComponents: DateComponents = .init(year: self.year, month: self.month.rawValue, day: self.day)
+        return Calendar.current.date(from: dateComponents)!
+    }
 }
 
 extension YearMonthDay: Equatable {

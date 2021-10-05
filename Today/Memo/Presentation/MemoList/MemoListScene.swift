@@ -15,11 +15,12 @@ struct MemoListScene: View {
         NavigationView {
             List(self.viewModel.memoList) { (memo) in
                 NavigationLink {
-                    MemoMakerScene(date: memo.date, text: memo.content) {
-                        memo.content = $0
-                        self.viewModel.objectWillChange.send()
-                        self.viewModel.save()
-                    }
+//                    MemoMakerScene(date: memo.date, text: memo.content) {
+//                        memo.content = $0
+//                        self.viewModel.objectWillChange.send()
+//                        self.viewModel.save()
+//                    }
+                    MemoDetailView(date: memo.date.toDate(), text: memo.content)
                 } label: {
                     if memo == .empty {
                         EmptyMemoRowView()
