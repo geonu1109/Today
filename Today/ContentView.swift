@@ -8,26 +8,35 @@
 import SwiftUI
 
 struct ContentView: View {
-    let movieClient: MovieClient = KOBISMovieClient()
+    let movieRepository: MovieRepository = .init(client: KOBISMovieClient(), dao: UserDefaultsMovieDAO())
     
     @State
-    var text: String = "hello world"
+    var movies: [Movie] = []
+    
+    @State
+    var error: Error?
     
     var body: some View {
-        VStack {
-            Text(self.text)
-                .lineSpacing(1.15)
-            Button("요청") {
-                Task {
-                    do {
-                        let data = try await self.movieClient.get()
-                        self.text = String(data: data, encoding: .utf8) ?? data.description
-                    } catch {
-                        self.text = "error: \(error)"
-                    }
+        NavigationView {
+            if let error = error {
+                Text(String(describing: error))
+            } else {
+                List(self.movies) { (movie) in
+                    MovieRowView(movie: movie)
+                }.listStyle(PlainListStyle())
+                .navigationTitle("박스오피스 순위")
+                .navigationBarTitleDisplayMode(.inline)
+            }
+        }
+        .onAppear {
+            Task {
+                do {
+                    self.movies = try await self.movieRepository.findAll(by: .init(from: .now - 3600 * 24))
+                } catch {
+                    self.error = error
                 }
             }
-        }.padding()
+        }
     }
 }
 

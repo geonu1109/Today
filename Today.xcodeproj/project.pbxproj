@@ -40,6 +40,9 @@
 		79AE2280270B3D9E00CB8D81 /* Month.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AE227F270B3D9D00CB8D81 /* Month.swift */; };
 		79AE2283270B3F2500CB8D81 /* UUID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AE2282270B3F2500CB8D81 /* UUID.swift */; };
 		79AE2287270B3F6B00CB8D81 /* MemoMakerScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AE2286270B3F6B00CB8D81 /* MemoMakerScene.swift */; };
+		79EAB52E271497F500C7CC29 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EAB52D271497F500C7CC29 /* Movie.swift */; };
+		79EAB5322714982E00C7CC29 /* MovieRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EAB5312714982E00C7CC29 /* MovieRowView.swift */; };
+		79EAB5352714A54700C7CC29 /* MovieRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EAB5342714A54700C7CC29 /* MovieRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +102,9 @@
 		79AE227F270B3D9D00CB8D81 /* Month.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Month.swift; sourceTree = "<group>"; };
 		79AE2282270B3F2500CB8D81 /* UUID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UUID.swift; sourceTree = "<group>"; };
 		79AE2286270B3F6B00CB8D81 /* MemoMakerScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoMakerScene.swift; sourceTree = "<group>"; };
+		79EAB52D271497F500C7CC29 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		79EAB5312714982E00C7CC29 /* MovieRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRowView.swift; sourceTree = "<group>"; };
+		79EAB5342714A54700C7CC29 /* MovieRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +144,9 @@
 			isa = PBXGroup;
 			children = (
 				793B538027143CAE00691EAE /* MovieClient.swift */,
+				79EAB52D271497F500C7CC29 /* Movie.swift */,
+				79EAB5312714982E00C7CC29 /* MovieRowView.swift */,
+				79EAB5342714A54700C7CC29 /* MovieRepository.swift */,
 			);
 			path = Movie;
 			sourceTree = "<group>";
@@ -450,7 +459,9 @@
 				797EA9E1267FA52500D6909F /* DefaultTaskRepository.swift in Sources */,
 				793B538127143CAE00691EAE /* MovieClient.swift in Sources */,
 				797EA9DD267F996A00D6909F /* UserDefaultsDataSource.swift in Sources */,
+				79EAB52E271497F500C7CC29 /* Movie.swift in Sources */,
 				799BED052670A9C30074C8A0 /* TodayApp.swift in Sources */,
+				79EAB5352714A54700C7CC29 /* MovieRepository.swift in Sources */,
 				799BED3B2670ACB80074C8A0 /* ListScene.swift in Sources */,
 				799BED362670AB460074C8A0 /* MainScene.swift in Sources */,
 				795C449426BC3F0D00E07A4E /* Memo.swift in Sources */,
@@ -460,6 +471,7 @@
 				795C44A426BC49B500E07A4E /* EmptyMemoRowView.swift in Sources */,
 				799BED432670B6770074C8A0 /* ThreadSafe.swift in Sources */,
 				799BED4A2670C4C30074C8A0 /* Entity.swift in Sources */,
+				79EAB5322714982E00C7CC29 /* MovieRowView.swift in Sources */,
 				799BED4C2670CAD50074C8A0 /* Container.swift in Sources */,
 				795C449C26BC40E100E07A4E /* YearMonthDay.swift in Sources */,
 				797EA9DF267FA4D500D6909F /* Record.swift in Sources */,
