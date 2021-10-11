@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		790FDE95270C5F0200C51831 /* MemoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790FDE94270C5F0200C51831 /* MemoDetailView.swift */; };
+		793B538127143CAE00691EAE /* MovieClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793B538027143CAE00691EAE /* MovieClient.swift */; };
 		795C449426BC3F0D00E07A4E /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795C449326BC3F0D00E07A4E /* Memo.swift */; };
 		795C449626BC3F8100E07A4E /* MemoListScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795C449526BC3F8100E07A4E /* MemoListScene.swift */; };
 		795C449826BC401100E07A4E /* MemoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795C449726BC401100E07A4E /* MemoListViewModel.swift */; };
@@ -60,6 +61,7 @@
 
 /* Begin PBXFileReference section */
 		790FDE94270C5F0200C51831 /* MemoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoDetailView.swift; sourceTree = "<group>"; };
+		793B538027143CAE00691EAE /* MovieClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieClient.swift; sourceTree = "<group>"; };
 		795C449326BC3F0D00E07A4E /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
 		795C449526BC3F8100E07A4E /* MemoListScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListScene.swift; sourceTree = "<group>"; };
 		795C449726BC401100E07A4E /* MemoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListViewModel.swift; sourceTree = "<group>"; };
@@ -132,6 +134,14 @@
 			path = MemoDetail;
 			sourceTree = "<group>";
 		};
+		793B537F27143C2300691EAE /* Movie */ = {
+			isa = PBXGroup;
+			children = (
+				793B538027143CAE00691EAE /* MovieClient.swift */,
+			);
+			path = Movie;
+			sourceTree = "<group>";
+		};
 		795C448E26BC3E5100E07A4E /* Memo */ = {
 			isa = PBXGroup;
 			children = (
@@ -183,6 +193,7 @@
 		799BED032670A9C30074C8A0 /* Today */ = {
 			isa = PBXGroup;
 			children = (
+				793B537F27143C2300691EAE /* Movie */,
 				795C448E26BC3E5100E07A4E /* Memo */,
 				799BED462670C3A70074C8A0 /* Data */,
 				799BED412670B6690074C8A0 /* Utility */,
@@ -437,6 +448,7 @@
 				79AE2280270B3D9E00CB8D81 /* Month.swift in Sources */,
 				795C449626BC3F8100E07A4E /* MemoListScene.swift in Sources */,
 				797EA9E1267FA52500D6909F /* DefaultTaskRepository.swift in Sources */,
+				793B538127143CAE00691EAE /* MovieClient.swift in Sources */,
 				797EA9DD267F996A00D6909F /* UserDefaultsDataSource.swift in Sources */,
 				799BED052670A9C30074C8A0 /* TodayApp.swift in Sources */,
 				799BED3B2670ACB80074C8A0 /* ListScene.swift in Sources */,
