@@ -10,6 +10,8 @@ import SwiftUI
 struct ContentView: View {
     let movieRepository: MovieRepository = .init(client: KOBISMovieClient(), dao: UserDefaultsMovieDAO())
     
+    let date: YearMonthDay = .init(from: .now - 3600 * 24)
+    
     @State
     var movies: [Movie] = []
     
@@ -21,17 +23,28 @@ struct ContentView: View {
             if let error = error {
                 Text(String(describing: error))
             } else {
-                List(self.movies) { (movie) in
-                    MovieRowView(movie: movie)
-                }.listStyle(PlainListStyle())
+                List {
+                    Section {
+                        ForEach(self.movies) { (movie) in
+                            MovieRowView(movie: movie)
+                        }
+                    } header: {
+                        Text("\(self.date.description) 기준")
+                    }
+
+                }
+//                List(self.movies) { (movie) in
+//                    MovieRowView(movie: movie)
+//                }
+//                .listStyle(PlainListStyle())
                 .navigationTitle("박스오피스 순위")
-                .navigationBarTitleDisplayMode(.inline)
+//                .navigationBarTitleDisplayMode(.inline)
             }
         }
         .onAppear {
             Task {
                 do {
-                    self.movies = try await self.movieRepository.findAll(by: .init(from: .now - 3600 * 24))
+                    self.movies = try await self.movieRepository.findAll(by: self.date)
                 } catch {
                     self.error = error
                 }

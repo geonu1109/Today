@@ -12,27 +12,26 @@ struct MovieRowView: View {
     
     var body: some View {
         VStack(alignment: .leading, spacing: 5) {
-            HStack {
-                Text("\(self.movie.rank)위")
-                    .font(.caption)
-                Spacer()
-                Text("\(self.movie.releaseDate.description) 개봉")
-                    .font(.caption)
-            }
+            Text("\(self.movie.rank)위")
+                .foregroundColor(.secondary)
+                .font(.caption)
             Text(self.movie.name)
                 .lineLimit(1)
                 .font(.headline)
             HStack(spacing: 0) {
-                Text("관객: \(self.movie.audienceNumber)명")
+                Text("\(self.movie.releaseDate.description) 개봉")
                     .font(.caption)
+                    .foregroundColor(.secondary)
                 Spacer()
-                Text("증감: ")
+                Text("관객: \(self.movie.audienceNumber)(")
                     .font(.caption)
+                    .foregroundColor(.secondary)
                 Text((self.movie.audienceNumberChange >= 0 ? "+" : "") + "\(self.movie.audienceNumberChange)")
                     .foregroundColor(self.movie.audienceNumberChange >= 0 ? .green : .red)
                     .font(.caption)
-                    Text("명")
-                        .font(.caption)
+                Text(")명")
+                    .font(.caption)
+                    .foregroundColor(.secondary)
             }
         }
     }
