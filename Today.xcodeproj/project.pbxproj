@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		790FDE95270C5F0200C51831 /* MemoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790FDE94270C5F0200C51831 /* MemoDetailView.swift */; };
 		793B538127143CAE00691EAE /* MovieClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793B538027143CAE00691EAE /* MovieClient.swift */; };
+		7956324B2725312C00318121 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7956324A2725312C00318121 /* Person.swift */; };
+		7956324D2725CB6A00318121 /* PersonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7956324C2725CB6A00318121 /* PersonTests.swift */; };
+		7956324F2725D1BF00318121 /* PersonalName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7956324E2725D1BF00318121 /* PersonalName.swift */; };
+		795632512725D1E100318121 /* Personality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795632502725D1E100318121 /* Personality.swift */; };
+		795632532725D1FC00318121 /* Sex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795632522725D1FC00318121 /* Sex.swift */; };
 		795C449426BC3F0D00E07A4E /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795C449326BC3F0D00E07A4E /* Memo.swift */; };
 		795C449626BC3F8100E07A4E /* MemoListScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795C449526BC3F8100E07A4E /* MemoListScene.swift */; };
 		795C449826BC401100E07A4E /* MemoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795C449726BC401100E07A4E /* MemoListViewModel.swift */; };
@@ -65,6 +70,11 @@
 /* Begin PBXFileReference section */
 		790FDE94270C5F0200C51831 /* MemoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoDetailView.swift; sourceTree = "<group>"; };
 		793B538027143CAE00691EAE /* MovieClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieClient.swift; sourceTree = "<group>"; };
+		7956324A2725312C00318121 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		7956324C2725CB6A00318121 /* PersonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTests.swift; sourceTree = "<group>"; };
+		7956324E2725D1BF00318121 /* PersonalName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalName.swift; sourceTree = "<group>"; };
+		795632502725D1E100318121 /* Personality.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Personality.swift; sourceTree = "<group>"; };
+		795632522725D1FC00318121 /* Sex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sex.swift; sourceTree = "<group>"; };
 		795C449326BC3F0D00E07A4E /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
 		795C449526BC3F8100E07A4E /* MemoListScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListScene.swift; sourceTree = "<group>"; };
 		795C449726BC401100E07A4E /* MemoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListViewModel.swift; sourceTree = "<group>"; };
@@ -151,6 +161,17 @@
 			path = Movie;
 			sourceTree = "<group>";
 		};
+		795632492725311D00318121 /* Person */ = {
+			isa = PBXGroup;
+			children = (
+				7956324A2725312C00318121 /* Person.swift */,
+				7956324E2725D1BF00318121 /* PersonalName.swift */,
+				795632502725D1E100318121 /* Personality.swift */,
+				795632522725D1FC00318121 /* Sex.swift */,
+			);
+			path = Person;
+			sourceTree = "<group>";
+		};
 		795C448E26BC3E5100E07A4E /* Memo */ = {
 			isa = PBXGroup;
 			children = (
@@ -202,6 +223,7 @@
 		799BED032670A9C30074C8A0 /* Today */ = {
 			isa = PBXGroup;
 			children = (
+				795632492725311D00318121 /* Person */,
 				793B537F27143C2300691EAE /* Movie */,
 				795C448E26BC3E5100E07A4E /* Memo */,
 				799BED462670C3A70074C8A0 /* Data */,
@@ -233,6 +255,7 @@
 			children = (
 				799BED1B2670A9C40074C8A0 /* TodayTests.swift */,
 				799BED1D2670A9C40074C8A0 /* Info.plist */,
+				7956324C2725CB6A00318121 /* PersonTests.swift */,
 			);
 			path = TodayTests;
 			sourceTree = "<group>";
@@ -449,9 +472,11 @@
 				799BED0E2670A9C40074C8A0 /* Persistence.swift in Sources */,
 				799BED3D2670AF1D0074C8A0 /* CreationScene.swift in Sources */,
 				799BED072670A9C30074C8A0 /* ContentView.swift in Sources */,
+				7956324F2725D1BF00318121 /* PersonalName.swift in Sources */,
 				799BED392670ABDE0074C8A0 /* TodayScene.swift in Sources */,
 				795C449826BC401100E07A4E /* MemoListViewModel.swift in Sources */,
 				795C449E26BC439500E07A4E /* ValueObject.swift in Sources */,
+				795632532725D1FC00318121 /* Sex.swift in Sources */,
 				790FDE95270C5F0200C51831 /* MemoDetailView.swift in Sources */,
 				799BED452670BAA50074C8A0 /* TodoRepository.swift in Sources */,
 				79AE2280270B3D9E00CB8D81 /* Month.swift in Sources */,
@@ -460,6 +485,7 @@
 				793B538127143CAE00691EAE /* MovieClient.swift in Sources */,
 				797EA9DD267F996A00D6909F /* UserDefaultsDataSource.swift in Sources */,
 				79EAB52E271497F500C7CC29 /* Movie.swift in Sources */,
+				7956324B2725312C00318121 /* Person.swift in Sources */,
 				799BED052670A9C30074C8A0 /* TodayApp.swift in Sources */,
 				79EAB5352714A54700C7CC29 /* MovieRepository.swift in Sources */,
 				799BED3B2670ACB80074C8A0 /* ListScene.swift in Sources */,
@@ -469,6 +495,7 @@
 				799BED402670B5030074C8A0 /* Todo.swift in Sources */,
 				79AE2283270B3F2500CB8D81 /* UUID.swift in Sources */,
 				795C44A426BC49B500E07A4E /* EmptyMemoRowView.swift in Sources */,
+				795632512725D1E100318121 /* Personality.swift in Sources */,
 				799BED432670B6770074C8A0 /* ThreadSafe.swift in Sources */,
 				799BED4A2670C4C30074C8A0 /* Entity.swift in Sources */,
 				79EAB5322714982E00C7CC29 /* MovieRowView.swift in Sources */,
@@ -484,6 +511,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7956324D2725CB6A00318121 /* PersonTests.swift in Sources */,
 				799BED1C2670A9C40074C8A0 /* TodayTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
