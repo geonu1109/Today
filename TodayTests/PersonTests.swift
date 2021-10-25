@@ -10,19 +10,21 @@ import XCTest
 
 class PersonTests: XCTestCase {
     func testRandom() {
+        let personMaker: Person.Maker = .init(personalNameMaker: .init())
         for i in 0 ..< 30 {
-            let person: Person = .randomKorean()
+            let person: Person = personMaker.randomKorean()
             print(person)
         }
         for i in 0 ..< 30 {
-            let person: Person = .randomAmerican()
+            let person: Person = personMaker.randomAmerican()
             print(person)
         }
     }
     
     func testNames() {
-        KoreanName.femaleGivenNames.forEach { (givenName) in
-            let name: KoreanName = .init(familyName: "전", givenName: givenName)
+        let koreanNameTemplate: PersonalName.Template = .get(for: .korean)!
+        koreanNameTemplate.females.forEach { (givenName) in
+            let name: PersonalName = .init(given: givenName, family: "Jeon")
             print(name)
         }
     }

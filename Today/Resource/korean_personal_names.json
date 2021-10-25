@@ -1,0 +1,28 @@
+{
+    "__ignore": {
+        "families": [
+            "김", "이", "박", "최", "정", "강", "조", "윤", "장", "임",
+            "한", "오", "서", "신", "권", "황", "안", "송", "전", "홍"
+        ],
+        "males": [
+            "이준", "서준", "하준", "도윤", "은우", "시우", "지호", "예준", "수호", "유준",
+            "로운", "이안", "선우", "민준", "주원", "준우", "건우", "연우", "도현", "서진"
+        ],
+        "females": [
+            "서아", "하윤", "이서", "지아", "지안", "서윤", "아윤", "아린", "하은", "하린",
+            "시아", "지우", "나은", "수아", "지유", "서하", "서우", "서연", "유나", "하율"
+        ]
+    },
+    "families": [
+        "Gim", "I", "Bak", "Choi", "Jeong", "Gang", "Jo", "Yun", "Jang", "Im",
+        "Han", "O", "Seo", "Sin", "Gwon", "Hwang", "An", "Song", "Jeon", "Hong"
+    ],
+    "males": [
+        "Ijun", "Seojun", "Hajun", "Doyun", "Eunu", "Siu", "Jiho", "Yejun", "Suho", "Yujun",
+        "Roun", "Ian", "Seonu", "Minjun", "Juwon", "Junu", "Geonu", "Yeonu", "Dohyeon", "Seojin"
+    ],
+    "females": [
+        "Seoa", "Hayun", "Iseo", "Jia", "Jian", "Seoyun", "Ayun", "Arin", "Ha-eun", "Harin",
+        "Sia", "Jiu", "Na-eun", "Sua", "Jiyu", "Seoha", "Seou", "Seoyeon", "Yuna", "Hayul"
+    ]
+}

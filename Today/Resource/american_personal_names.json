@@ -1,0 +1,14 @@
+{
+    "families": [
+        "Smith", "Johnson", "Williams", "Brown", "Jones", "Garcia", "Miller", "Davis", "Rodriguez", "Martinez",
+        "Hernandez", "Lopez", "Gonzales", "Wilson", "Anderson", "Tomas", "Taylor", "Moore", "Jackson", "Martin"
+    ],
+    "males": [
+        "Liam", "Noah", "Oliver", "Elijah", "Lucas", "Levi", "Mason", "James", "Asher", "Mateo",
+        "Ethan", "Leo", "Benjamin", "Jack", "Aiden", "Logan", "Grayson", "Leriel", "Jackson", "Henry"
+    ],
+    "females": [
+        "Olivia", "Emma", "Amelia", "Ava", "Sophia", "Charlotte", "Isabella", "Mia", "Luna", "Harper",
+        "Gianna", "Evelyn", "Aria", "Ella", "Ellie", "Mila", "Layla", "Avery", "Ryilee", "Camila"
+    ]
+}
