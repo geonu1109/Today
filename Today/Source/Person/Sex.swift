@@ -12,7 +12,7 @@ enum Sex: Equatable, CustomStringConvertible {
     case female
     
     var description: String {
-        return self == .male ? "♂" : "♀"
+        return self == .male ? "Male" : "Female"
     }
     
     static func random() -> Sex {

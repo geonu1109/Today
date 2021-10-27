@@ -21,6 +21,7 @@
 		795C449C26BC40E100E07A4E /* YearMonthDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795C449B26BC40E100E07A4E /* YearMonthDay.swift */; };
 		795C449E26BC439500E07A4E /* ValueObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795C449D26BC439500E07A4E /* ValueObject.swift */; };
 		795C44A426BC49B500E07A4E /* EmptyMemoRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795C44A326BC49B500E07A4E /* EmptyMemoRowView.swift */; };
+		797D6C7D2727B7DD0026D6D2 /* Religion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797D6C7C2727B7DD0026D6D2 /* Religion.swift */; };
 		797EA9DD267F996A00D6909F /* UserDefaultsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797EA9DC267F996A00D6909F /* UserDefaultsDataSource.swift */; };
 		797EA9DF267FA4D500D6909F /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797EA9DE267FA4D500D6909F /* Record.swift */; };
 		797EA9E1267FA52500D6909F /* DefaultTaskRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797EA9E0267FA52500D6909F /* DefaultTaskRepository.swift */; };
@@ -85,6 +86,7 @@
 		795C449B26BC40E100E07A4E /* YearMonthDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YearMonthDay.swift; sourceTree = "<group>"; };
 		795C449D26BC439500E07A4E /* ValueObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueObject.swift; sourceTree = "<group>"; };
 		795C44A326BC49B500E07A4E /* EmptyMemoRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyMemoRowView.swift; sourceTree = "<group>"; };
+		797D6C7C2727B7DD0026D6D2 /* Religion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Religion.swift; sourceTree = "<group>"; };
 		797EA9DC267F996A00D6909F /* UserDefaultsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsDataSource.swift; sourceTree = "<group>"; };
 		797EA9DE267FA4D500D6909F /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
 		797EA9E0267FA52500D6909F /* DefaultTaskRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTaskRepository.swift; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 				795632502725D1E100318121 /* Personality.swift */,
 				795632522725D1FC00318121 /* Sex.swift */,
 				79B0AFC82726A7F800A37B94 /* Culture.swift */,
+				797D6C7C2727B7DD0026D6D2 /* Religion.swift */,
 			);
 			path = Person;
 			sourceTree = "<group>";
@@ -503,6 +506,7 @@
 				799BED392670ABDE0074C8A0 /* TodayScene.swift in Sources */,
 				795C449826BC401100E07A4E /* MemoListViewModel.swift in Sources */,
 				795C449E26BC439500E07A4E /* ValueObject.swift in Sources */,
+				797D6C7D2727B7DD0026D6D2 /* Religion.swift in Sources */,
 				795632532725D1FC00318121 /* Sex.swift in Sources */,
 				790FDE95270C5F0200C51831 /* MemoDetailView.swift in Sources */,
 				79B0AFC92726A7F800A37B94 /* Culture.swift in Sources */,

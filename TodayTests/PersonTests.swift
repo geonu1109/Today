@@ -28,4 +28,9 @@ class PersonTests: XCTestCase {
             print(name)
         }
     }
+    
+    func testGeonu() {
+        print(Person.geonu)
+        print(Person.suhyeon)
+    }
 }

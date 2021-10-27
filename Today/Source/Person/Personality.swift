@@ -54,6 +54,7 @@ enum TraitLevel: Int, Comparable, CustomStringConvertible {
     }
     
     static func random() -> TraitLevel {
-        return .init(rawValue: .random(in: 1 ... 5))!
+        let array: [Bool] = [.random(), .random(), .random(), .random()]
+        return .init(rawValue: (array.filter { $0 }.count + 1))!
     }
 }
